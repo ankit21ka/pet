@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pet-Friendly City Campaign 🐾 - Dark Theme CSS Only</title>
+<link rel="stylesheet" href="pet_love.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home" aria-label="Home">Home</a></li>
+      <li><a href="#about" aria-label="About">About</a></li>
+      <li><a href="#volunteer" aria-label="Volunteer">Volunteer</a></li>
+      <li><a href="#impact" aria-label="Impact Stories">Impact Stories</a></li>
+      <li><a href="#contact" aria-label="Contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero" role="banner" aria-label="Hero Section">
+    <h1>Making Cities Paw-some! 🐾✨</h1>
+    <div class="cta-buttons">
+      <a href="#volunteer" role="button" class="btn">Join the Movement</a>
+      <a href="#volunteer" role="button" class="btn">Volunteer Now</a>
+      <a href="#about" role="button" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" aria-label="About the Campaign">
+    <h2>🐶 About the Campaign</h2>
+    <p>
+      We’re on a mission to transform cities into safe, welcoming spaces for our furry friends 🐕🐈. Join us in making urban life better for street dogs and all pets by volunteering and spreading awareness!
+    </p>
+  </section>
+
+  <section id="volunteer" aria-label="Volunteer Sign Up">
+    <h2>📋 Volunteer Sign Up</h2>
+    <form>
+      <label for="name">Name <span aria-hidden="true">🐾</span>:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="city">City <span aria-hidden="true">🏙️</span>:</label>
+      <input type="text" id="city" name="city" placeholder="Where you are from" required />
+
+      <label for="role">Role Preference <span aria-hidden="true">🤝</span>:</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Choose your preferred role</option>
+        <option value="rescuer">Rescuer</option>
+        <option value="fundraiser">Fundraiser</option>
+        <option value="event-organizer">Event Organizer</option>
+        <option value="social-media">Social Media Ambassador</option>
+        <option value="foster-carer">Foster Carer</option>
+      </select>
+
+      <button type="submit" aria-label="Submit Volunteer Form">Sign Up</button>
+    </form>
+  </section>
+
+  <section id="pets" aria-label="Adoptable Pets">
+    <h2>🐾 Adoptable Pets: Find Your New Friend</h2>
+
+    <!-- Carousel radios -->
+    <input type="radio" name="carousel" id="slide1" class="carousel-input" checked>
+    <input type="radio" name="carousel" id="slide2" class="carousel-input">
+    <input type="radio" name="carousel" id="slide3" class="carousel-input">
+    <input type="radio" name="carousel" id="slide4" class="carousel-input">
+
+    <div class="carousel-container">
+      <div class="carousel-slides">
+        <article class="pet-card" tabindex="0" aria-label="Portrait of Buddy, a happy dog, 2 years old">
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=400&q=80" alt="Buddy, a happy dog" />
+          <h3>Buddy 🐕</h3>
+          <p>2 years old | Friendly & Playful</p>
+        </article>
+        <article class="pet-card" tabindex="0" aria-label="Portrait of Misty, a gentle cat, 3 years old">
+          <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=400&q=80" alt="Misty, a gentle cat" />
+          <h3>Misty 🐈</h3>
+          <p>3 years old | Calm & Loving</p>
+        </article>
+        <article class="pet-card" tabindex="0" aria-label="Portrait of Charlie, a small dog with big eyes, 1 year old">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=400&q=80" alt="Charlie, a small dog with big eyes" />
+          <h3>Charlie 🐶</h3>
+          <p>1 year old | Energetic & Curious</p>
+        </article>
+        <article class="pet-card" tabindex="0" aria-label="Portrait of Luna, a playful kitten, 6 months old">
+          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=400&q=80" alt="Luna, a playful kitten" />
+          <h3>Luna 🐱</h3>
+          <p>6 months old | Playful & Sweet</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="carousel-nav" role="tablist" aria-label="Select pet slide">
+      <label for="slide1" role="tab" aria-selected="true" tabindex="0" aria-controls="car-slide1" title="Show Buddy"></label>
+      <label for="slide2" role="tab" aria-selected="false" tabindex="0" aria-controls="car-slide2" title="Show Misty"></label>
+      <label for="slide3" role="tab" aria-selected="false" tabindex="0" aria-controls="car-slide3" title="Show Charlie"></label>
+      <label for="slide4" role="tab" aria-selected="false" tabindex="0" aria-controls="car-slide4" title="Show Luna"></label>
+    </div>
+  </section>
+
+  <section id="impact" aria-label="Impact Stories">
+    <h2>🌟 Impact Stories</h2>
+    <div class="impact-stories">
+      <article class="story" tabindex="0">
+        <p>Max was rescued from the streets and now happily living with a loving family. 🏡🐕</p>
+      </article>
+      <article class="story" tabindex="0">
+        <p>Community volunteers saved over 50 stray pets last year! Teamwork makes the dream work! 🤝🐾</p>
+      </article>
+      <article class="story" tabindex="0">
+        <p>Our awareness campaigns helped improve pet-friendly policies in 3 cities. 📢🌆</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact Information">
+    <h2>📞 Contact Us</h2>
+    <p>
+      Have questions or want to get involved? Reach out via email at <a href="mailto:contact@petfriendlycity.org">contact@petfriendlycity.org</a> or call us at <a href="tel:+1234567890">+1 234 567 890</a>.
+    </p>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <p>© 2023 Pet-Friendly City Campaign. Made with ❤️ by Volunteers.</p>
+</footer>
+
+</body>
+</html>
+
